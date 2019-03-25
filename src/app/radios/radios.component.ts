@@ -9,7 +9,7 @@ import { StationsService } from '../stations.service';
 export class RadiosComponent implements OnInit {
 
   stations:any = {};
-  selectedStation = {};
+  selectedStation = null;
 
   constructor(private stationsService: StationsService) { }
 
@@ -22,7 +22,8 @@ export class RadiosComponent implements OnInit {
   }
 
   onClick(station): void {
-    this.selectedStation = station;
+    if (this.selectedStation === station) this.selectedStation = null
+    else this.selectedStation = station;
   }
 
   ngOnInit() {

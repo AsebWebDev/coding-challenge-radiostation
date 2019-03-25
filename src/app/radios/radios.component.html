@@ -11,7 +11,12 @@
       </li>
     </ul>
   </div>
-  <div class="footer"></div>
+  <div class="footer">
+    <div *ngIf="selectedStation" class="currently-playing">
+        <span class="top">CURRENTLY PLAYING</span>
+        <strong>{{selectedStation.name}}</strong>
+    </div>
+  </div>
 </div>
 
 
