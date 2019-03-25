@@ -8,7 +8,8 @@ import { StationsService } from '../stations.service';
 })
 export class RadiosComponent implements OnInit {
 
-  stations:any = {}
+  stations:any = {};
+  selectedStation = {};
 
   constructor(private stationsService: StationsService) { }
 
@@ -18,6 +19,10 @@ export class RadiosComponent implements OnInit {
       console.log(data);
       this.stations = data;
     });
+  }
+
+  onClick(station): void {
+    this.selectedStation = station;
   }
 
   ngOnInit() {

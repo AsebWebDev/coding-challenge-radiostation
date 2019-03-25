@@ -1,6 +1,14 @@
 <div class="radio-item">
-  <p>{{station.name}}</p>
-  <p><strong>{{station.frequency}}</strong></p>
+    <div *ngIf="selectedStation==station" class="extended">
+        <i class="fa fa-minus-circle"></i>      
+        <img src={{selectedStation.image}} alt="radioimage">
+        <i class="fa fa-plus-circle"></i>
+    </div>
+  <div class="basic">
+    <p>{{station.name}}</p>
+    <p><strong>{{station.frequency}}</strong></p>
+  </div>
+
 </div>
 
 

@@ -1,6 +1,27 @@
-.radio-item {
+* {
   display: flex;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 5px 20px;
+}
+
+.radio-item {
+  flex-direction: column;
+}
+
+.basic {
   flex-direction: row;
   justify-content: space-between;
+}
+
+.extended {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
