@@ -1,9 +1,19 @@
 ul {
   margin: 0;
+  padding: 0 10px;
+  color: rgb(218, 203, 203);
 }
 
 i {
   margin: 0 10px;
+}
+
+li {
+  list-style:  none;
+}
+
+li:nth-child(n+2) {
+  border-top: 1px solid grey;
 }
 
 .radio-container {
