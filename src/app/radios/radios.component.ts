@@ -8,13 +8,12 @@ import { StationsService } from '../stations.service';
 })
 export class RadiosComponent implements OnInit {
 
-  stations:any = {};
+  stations: any = {};
   selectedStation = null;
 
   constructor(private stationsService: StationsService) { }
 
   getStations() {
-    this.stations = [];
     this.stationsService.getStations().subscribe((data: {}) => {
       console.log(data);
       this.stations = data;
@@ -22,8 +21,8 @@ export class RadiosComponent implements OnInit {
   }
 
   onClick(station): void {
-    if (this.selectedStation === station) this.selectedStation = null
-    else this.selectedStation = station;
+    if (this.selectedStation === station) { this.selectedStation = null; }
+    else { this.selectedStation = station; }
   }
 
   ngOnInit() {
