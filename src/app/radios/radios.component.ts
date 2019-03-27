@@ -8,7 +8,7 @@ import { StationsService } from '../stations.service';
 })
 export class RadiosComponent implements OnInit {
 
-  stations: any = {};
+  stations: any = null;
   selectedStation = null;
 
   constructor(private stationsService: StationsService) { }
