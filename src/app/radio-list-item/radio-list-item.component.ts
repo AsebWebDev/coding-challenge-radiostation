@@ -8,11 +8,9 @@ import { StationsService } from '../stations.service';
 })
 export class RadioListItemComponent implements OnInit {
 
-
-  // stations:any = {}
   @Input() station: any[];
-  @Input() selectedStation: Object
-  @Input() isClicked: Boolean
+  @Input() selectedStation: object;
+  @Input() isClicked: boolean;
 
   constructor() { }
 

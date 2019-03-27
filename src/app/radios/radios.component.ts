@@ -21,8 +21,9 @@ export class RadiosComponent implements OnInit {
   }
 
   onClick(station): void {
-    if (this.selectedStation === station) { this.selectedStation = null; }
-    else { this.selectedStation = station; }
+    (this.selectedStation === station)
+    ? this.selectedStation = null
+    : this.selectedStation = station;
   }
 
   ngOnInit() {
