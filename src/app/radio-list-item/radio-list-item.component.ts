@@ -10,7 +10,6 @@ export class RadioListItemComponent implements OnInit {
 
   @Input() station: any[];
   @Input() selectedStation: object;
-  @Input() isClicked: boolean;
 
   constructor() { }
 
